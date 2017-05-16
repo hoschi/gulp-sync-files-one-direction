@@ -1,0 +1,15 @@
+{
+  "name": "gulp-sync-files-one-direction",
+  "version": "1.0.0",
+  "description": "Syncs files from src to dest where only changed/added/deleted files are processed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "sync"
+  ],
+  "author": "Stefan Gojan",
+  "license": "MIT"
+}
