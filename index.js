@@ -18,8 +18,8 @@ function createSync ({ignoreInitial, inputPatterns, basePath, destPath}) {
         .pipe(print((filepath) => 'deleted ' + filepath))
         .pipe(through.obj((file, enc, done) => {
             let relative = path.relative(basePath, file.path)
-            let destPath = path.resolve(destPath, relative)
-            del(destPath, done)
+            let destPathResolved = path.resolve(destPath, relative)
+            del(destPathResolved, done)
         }))
         .pipe(filterIsDeleted.restore)
         .pipe(print((filepath) => 'syncing ' + filepath))
