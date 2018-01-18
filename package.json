@@ -1,6 +1,6 @@
 {
   "name": "gulp-sync-files-one-direction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Syncs files from src to dest where only changed/added/deleted files are processed.",
   "main": "index.js",
   "repository": "https://github.com/hoschi/gulp-sync-files-one-direction",
@@ -13,14 +13,14 @@
   ],
   "author": "Stefan Gojan",
   "license": "MIT",
-  "peerDependencies":{
-      "gulp":"3.x"
+  "peerDependencies": {
+    "gulp": "3.x"
   },
   "dependencies": {
     "gulp-filter": "5.0.0",
     "gulp-print": "2.0.1",
     "gulp-watch": "4.3.11",
     "through2": "2.0.3",
-    "del":"2.2.2"
+    "del": "2.2.2"
   }
 }
